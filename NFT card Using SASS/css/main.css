@@ -1,0 +1,131 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-VDB);
+  font-family: "Outfit", sans-serif;
+}
+
+.equilibrium {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-VDB2);
+  justify-content: center;
+  width: 20rem;
+  height: auto;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1.3rem;
+  border-radius: 10px;
+}
+.equilibrium__hero_image_box {
+  position: relative;
+}
+.equilibrium__hero_image {
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+.equilibrium__hero_image_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  margin-bottom: 1.7rem;
+  border-radius: 0.5rem;
+}
+.equilibrium__hero_image_box:hover .equilibrium__hero_image_overlay {
+  background-color: hsla(178, 100%, 50%, 0.367);
+  opacity: 1;
+  cursor: pointer;
+}
+.equilibrium__headline {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.equilibrium__headline:hover {
+  color: var(--color-main-cyan);
+}
+.equilibrium__descriptions {
+  color: var(--color-primary-SB);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 1.1rem;
+}
+.equilibrium__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.equilibrium__eth_price, .equilibrium__promo_day {
+  display: flex;
+  align-items: center;
+  gap: 0.51rem;
+  font-weight: 600;
+}
+.equilibrium__eth_price {
+  color: var(--color-main-cyan);
+}
+.equilibrium__promo_day {
+  color: var(--color-primary-SB);
+}
+.equilibrium hr {
+  width: 100%;
+  border-color: var(--color-primary-SB);
+}
+.equilibrium__creation_box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.equilibrium__avater {
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-SB);
+  width: 10%;
+}
+.equilibrium__creation_name {
+  color: var(--color-primary-SB);
+}
+.equilibrium__creation_name a {
+  color: var(--color-white);
+}
+.equilibrium__creation_name a:hover {
+  color: var(--color-main-cyan);
+}
+
+:root {
+  --color-primary-SB: hsl(215, 51%, 70%);
+  --color-main-cyan: hsl(178, 100%, 50%);
+  --color-VDB: hsl(217, 54%, 11%);
+  --color-VDB2: hsl(216, 50%, 16%);
+  --color-VDB3: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
